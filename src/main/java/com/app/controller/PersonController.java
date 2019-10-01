@@ -18,4 +18,9 @@ public class PersonController {
                 Person.builder().name("CCCC").build()
         );
     }
+
+    @GetMapping
+    public List<Person> findAll2() {
+        return List.of(Person.builder().name("ZZZZ").build());
+    }
 }
